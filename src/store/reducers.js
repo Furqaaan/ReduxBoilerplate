@@ -1,7 +1,7 @@
 // We could have multiple reducers in our project , so we combine all reducers together
 
 import { combineReducers } from "redux";
-import countReducer from "./reducers/countReducer";
+import countReducer from "./count/countReducer";
 
 const reducers = combineReducers({
     count: countReducer,

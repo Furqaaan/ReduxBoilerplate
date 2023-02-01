@@ -1,9 +1,11 @@
-import StateWithHook from "./StateWithHook";
+import StateWithHook from "./components/StateWithHook";
+import StateWithoutHooks from "./components/StateWithoutHooks";
 
 function App() {
     return (
         <div className="App">
-            <StateWithHook />
+            {/* <StateWithHook/> */}
+            <StateWithoutHooks />
         </div>
     );
 }

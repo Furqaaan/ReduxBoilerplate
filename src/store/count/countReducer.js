@@ -3,12 +3,14 @@
 // state = initial data of the state
 // action = the action to be performed ; {type,payload}
 
+import * as actions from "./countActionTypes";
+
 //the initial state
 const initialState = 10;
 
 const reducer = (state=initialState,action) => {
     switch(action.type) {
-        case "increment":
+        case actions.INCREMENT_COUNT:
             return state + action.payload;
         default:
             return state;
